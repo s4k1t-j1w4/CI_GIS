@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Start Bootstrap - SB Admin Version 2.0 Demo</title>
+    <title>GIS PT. Inti</title>
 
     <!-- Core CSS - Include with every page -->
     <link href="<?php echo base_url() ;?>assets/css/bootstrap.min.css" rel="stylesheet">
@@ -16,6 +16,7 @@
 
     <!-- SB Admin CSS - Include with every page -->
     <link href="<?php echo base_url() ;?>assets/css/sb-admin.css" rel="stylesheet">
+    <?php echo $map['js']; ?>
 </head>
 
 <body>
@@ -76,7 +77,7 @@
                     </ul>
                     <!-- /.dropdown-messages -->
                 </li>
-                
+
                 <!-- /.dropdown -->
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -171,12 +172,12 @@
                         <!-- /input-group -->
                     </li>
                     <li>
-                        <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                        <a href="#"><i class="fa fa-table fa-fw"></i> Lokasi</a>
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                        <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Register lokal</a>
                     </li>
-                    
+
                     <li>
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
@@ -217,27 +218,26 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+                    <h4 class="page-header">Dashboard</h4>
                 </div>
-                <!-- /.col-lg-12 -->
             </div>
-            <!-- /.row -->
+
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Maps
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    asas
+                                  <?php echo $map['html']; ?>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </div>
